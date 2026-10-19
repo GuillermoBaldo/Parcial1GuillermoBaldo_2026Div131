@@ -1,0 +1,111 @@
+:root{
+    --color-primario :#483D8B;
+    --color-grisClaro :#dddddd;
+    --color-grisOscuro :#fbfbfb;
+    --color-secundario :#f0eefb;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+header h1 {
+    text-align: center;
+    
+}
+
+footer{
+    text-align: center;
+    margin-top: 40px;
+    font-size: 0.9rem;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin: 0px;
+
+}
+.filtros{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.barraBusqueda-contenedor{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.barraBusqueda-contenedor input{
+    padding: 8px 12px;
+    width: 400px;
+    border: 1px solid var(--color-grisOscuro);
+    background-color: var(--color-grisClaro);
+}
+
+.acciones {
+    display: flex;
+    gap: 10px;
+}
+
+.acciones button {
+    padding: 8px 12px;
+    background-color: white;
+    color: var(--color-primario);
+    border: 1px solid var(--color-primario);
+    cursor: pointer;
+    font-weight: bold;
+
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: none;
+    background-color: gray;
+    margin: 20px 0;
+}
+.barra {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 15px 0;
+}
+
+
+#users-container table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+    
+}
+
+img{
+    width: 20px;
+}
+#users-container th, 
+#users-container td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid var(--dark-gray, #dddddd);
+}
+
+
+#users-container th {
+    font-weight: bold;
+    background-color: #fff;
+}
+
+
+#users-container td.username {
+    color: var(--primary-color, #483D8B);
+    font-weight: bold;
+}
+
+#user-container tbody tr:nth-child(odd){
+    background-color: violet;
+}

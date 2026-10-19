@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parcial 1- division 131 </title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="index.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Parcial 1 - División 131</h1>
+    </header>
+    <main>
+        <h2 id="usuario-titulo">Users</h2>
+        
+        <div class="barra">
+            <!-- filtros en la pagina -->
+            <div class="filtros">
+                <label>
+                    <input type="radio" name="status" value="active" checked> Active
+                </label>
+                <label>
+                    <input type="radio" name="status" value="inactive" checked> Inactive
+                </label>
+                <label>
+                    <input type="radio" name="status" value="all" checked> All
+                </label>
+
+                
+            </div>
+
+            <!-- barra de busqueda -->
+            <div class="barraBusqueda-contenedor">
+                <input type="text" id="barraBusqueda-input" placeholder="Search Users">
+            </div>
+        </div>
+        
+
+        <!-- botnes de la pagina  -->
+        <div class="acciones">
+            <button type="button" id="btn-create"> CREATE</button>
+            <button type="button" id="btn-desactivate"> DESACTIVATE</button>
+            <button type="button" id="btn-reset"> REST PASSWORD</button>
+
+        </div>
+        <hr>
+
+        <!-- tabla de usuarios -->
+        <div id="users-container"></div>
+        
+    </main>
+    <footer>
+        <p>Hecho por Guillermo Baldó</p>
+    </footer>
+</body>
+</html>
