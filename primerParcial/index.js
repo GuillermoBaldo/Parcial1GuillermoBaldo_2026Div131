@@ -4,13 +4,15 @@ const usuariosArray = JSON.parse(jsonUsuarios);
 // console.table(usuariosArray)
 // localStorage.setItem("usuarios", JSON.stringify(usuariosArray));
 
+
 const usuariosStorage = JSON.parse(localStorage.getItem("usuarios"));
 console.table(usuariosStorage)
 
-const tituloUser = document.getElementById("usuario-titulo");
+
 const userContenedor = document.getElementById("users-container");
 const inputBusqueda = document.getElementById("barraBusqueda-input");
 
+// funcion para la cracion de la tabla
 function crearTabla(arrayUsers){
     userContenedor.innerHTML = "";
     
@@ -54,6 +56,7 @@ function crearTabla(arrayUsers){
     userContenedor.appendChild(table)
 }
 
+// lisener para que funciona la barra de busqueda
 inputBusqueda.addEventListener("keyup", (e) =>{
     const textoBuscado = e.target.value.toLowerCase();
     const usuarioFiltrado = usuariosStorage.filter( user => {

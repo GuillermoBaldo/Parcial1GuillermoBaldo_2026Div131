@@ -97,7 +97,6 @@ img{
 
 #users-container th {
     font-weight: bold;
-    background-color: #fff;
 }
 
 
@@ -106,6 +105,8 @@ img{
     font-weight: bold;
 }
 
-#user-container tbody tr:nth-child(odd){
-    background-color: violet;
+#users-container tr:nth-child(even){
+    background-color: var(--color-grisClaro);
 }
+
+
